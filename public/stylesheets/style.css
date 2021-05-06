@@ -127,10 +127,7 @@ form label {
 .comment {
   padding: 1%;
   margin-bottom: 1%;
-}
-
-.comment:nth-child(odd) {
-  background-color: #fff5eb;
+  background-color: cornsilk;
 }
 
 .comment .meta {
@@ -141,6 +138,10 @@ form label {
 
 .new-post-form input {
   width: 300px;
+}
+
+button{
+  align-content: center;
 }
 
 .edit-post-form {
