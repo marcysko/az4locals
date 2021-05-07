@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS az4locals_db;
+
+CREATE DATABASE az4locals_db;
