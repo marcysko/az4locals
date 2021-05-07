@@ -3,19 +3,6 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 
-const Add2Calendar = require('add2calendar');
-
-
-
-
-var weather = require('openweather-apis');
-weather.setCity('Phoenix'); 
-
-// get 3 days forecast
-weather.getWeatherForecastForDays(3, function(err, obj){
-    console.log(obj);
-});
-
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -23,7 +10,7 @@ const sequelize = require("./config/connection");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
-  secret: 'Aliens were here not Rosewell!',
+  secret: 'secret',
   cookie: {},
   resave: false,
   saveUninitialized: true,
