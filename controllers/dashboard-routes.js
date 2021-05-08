@@ -1,4 +1,5 @@
 const router = require('express').Router();
+<<<<<<< HEAD
 const sequelize = require('../config/connection');
 const { Post, User, Comment, Vote } = require('../models');
 const withAuth = require('../utils/auth');
@@ -85,3 +86,56 @@ router.get('/edit/:id', withAuth, (req, res) => {
 });
 
 module.exports = router;
+=======
+const { Post} = require('../models');
+const withAuth = require('../utils/auth');
+
+
+router.get('/', withAuth, (req, res) => {
+  Post.findAll({
+    where: {
+      userId: req.session.userId
+    }
+})
+.then(dbPostData => {
+    const posts = dbPostData.map((post) => post.get({ plain: true }));
+    
+    res.render("current-post-admin", {
+      layout: "dashboard",
+      posts
+    });
+  })
+  .catch(err => {
+    console.log(err);
+    res.redirect("login");
+  });
+});
+
+
+router.get('/new', withAuth, (req, res) => {
+    res.render('create-post', {
+        layout: 'dashboard'
+    });
+});
+
+router.get("/edit/:id", withAuth, (req, res) => {
+    Post.findByPk(req.params.id)
+      .then(dbPostData => {
+        if (dbPostData) {
+          const post = dbPostData.get({ plain: true });
+          
+          res.render("edit-post", {
+            layout: "dashboard",
+            post
+          });
+        } else {
+          res.status(404).end();
+        }
+      })
+      .catch(err => {
+        res.status(500).json(err);
+      });
+  });
+  
+module.exports = router;
+>>>>>>> f18615ea2bb3c47825323a70ea401bdad1204d35

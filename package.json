@@ -1,26 +1,36 @@
 {
-  "name": "hacker-news-clone",
+  "name": "az4locals",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Licensing:   [![license](https://img.shields.io/badge/license-ISC-yellow)](https://shields.io)",
   "main": "server.js",
+  "dependencies": {
+    "add2calendar": "^1.1.7",
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^9.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.1",
+    "express-session": "^1.17.1",
+    "googleapis": "^39.2.0",
+    "install": "^0.13.0",
+    "mysql2": "^2.2.5",
+    "npm": "^7.12.0",
+    "openweather-apis": "^4.4.1",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "jest",
-    "seeds": "node seeds/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcysko/az4locals.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^4.0.1",
-    "connect-session-sequelize": "^6.1.1",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
-    "express-session": "^1.17.0",
-    "handlebars": "^4.7.3",
-    "mysql2": "^2.1.0",
-    "sequelize": "^5.21.5"
+  "bugs": {
+    "url": "https://github.com/marcysko/az4locals/issues"
   },
-  "devDependencies": {
-    "jest": "^25.1.0"
-  }
+  "homepage": "https://github.com/marcysko/az4locals#readme"
 }
