@@ -1,63 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/stylesheets/style.css">
-    <title>AZ4locals</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AZ 4 Locals</title>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
-<body>
-        <header>
-            <div id="banner" class="row">
-            <h1 class = "col-12 text-center">
-                AZ 4 locals
-            </h1>
-            </div>
-     <nav class ="navbar">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                        </button>
-                      </div>
-                      <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                          <li class="active"><a href="/homepage">Home</a></li>
-                          <li><a href="/dashboard">Dashboard</a></li>
-                          <li><a href="#">Calendar</a></li>
-                          <li><a href="#">Events</a></li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                          <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                          {{#if loggedIn}}
-                              <button id="logout" class="btn-no-style">logout</button>
-                            {{else}}
-                            <a href="/login">login</a>
-                          {{/if}}
-                        </ul>
-                      </div>
-                    </div>
-            </nav>
-    </header>
-    <main id="blog" class="bg-light row">
-      {{{ body }}}
-    </main>
-    <footer>
-      Thanks for visiting!
-    </footer>
-  </div>
+
+<body class="flex-column min-100-vh">
+  <nav class="navbar">
+    <ul>
+      <li class="li-inline nav-item"><a href="/">Home</a></li>
+      <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
+      <li class="li-inline nav-item"><a href="/login">Login</a></li>
+    </ul>
+  </nav>
+  <header class="hero">
+    <h1 class="app-title"><a href="/">AZ 4 Locals</a></h1>
+  </header>
+    <!-- weather widget start --><a target="_blank" href="https://www.booked.net/weather/phoenix-647"><img src="https://w.bookcdn.com/weather/picture/30_647_0_1_e67e22_250_d35401_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=55254"  alt="booked.net"/></a><!-- weather widget end -->
+  <main class="col-auto">
+    {{{body}}}
+     <section class="footer flex-row justify-center">
+        <a href="/dashboard/new">➕ New Post</a>
+    </section>
+  </main>
+    
+  <footer class="flex-row justify-center">
+    &copy; Group II
+  </footer>
   
-  {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
+<script src="/javascript/logout.js"></script>
