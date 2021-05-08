@@ -28,7 +28,6 @@ ISC
 
 - CSS
 - JavaScript
-- JSON
 - Node.js 
 - Handlebars.js
 - Heroku
