@@ -1,8 +1,8 @@
 :root {
   --primary: #d15d1a;
   --secondary: rgba(239, 241, 245, 0.623);
-  --tertiary: #f1efdd;
-  --light-dark: #35379e;
+  --tertiary: #d15d1a;
+  --light-dark: rgb(250, 249, 240);
   --dark: #f1e8ee;
   --border-radius: 0.3rem;
 }
@@ -57,6 +57,7 @@ main {
 
 a {
   text-decoration: none;
+  color:rgb(245, 240, 240)
 }
 
 p {
