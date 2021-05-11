@@ -1,5 +1,5 @@
 {
-  "name": "az4locals",
+  "name": "project-2-practice",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -8,20 +8,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marcysko/az4locals.git"
+    "url": "git+https://github.com/marcysko/Project-2-Practice.git"
   },
-  "author": "Marcia Skousen, Emily Stewart, Nate Johnson",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/marcysko/az4locals/issues"
+    "url": "https://github.com/marcysko/Project-2-Practice/issues"
   },
-  "homepage": "https://github.com/marcysko/az4locals#readme",
+  "homepage": "https://github.com/marcysko/Project-2-Practice#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",
     "dotenv": "^9.0.0",
     "express": "^4.17.1",
-    "express-handlebars": "^5.3.1",
+    "express-handlebars": "^5.3.2",
     "express-session": "^1.17.1",
     "mysql2": "^2.2.5",
     "sequelize": "^6.6.2"

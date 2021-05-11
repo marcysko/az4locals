@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS az4locals_db;
+DROP DATABASE IF EXISTS project2_db;
 
-CREATE DATABASE az4locals_db;
+CREATE DATABASE project2_db;
