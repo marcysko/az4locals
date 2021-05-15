@@ -44,7 +44,8 @@ ISC
 - Git
 
 
-
+## Contributors
+Marcia Skousen, Emily Stewart, Nate Johnson
 
 ## Questions
 * For questions, please reach out to me at marciasko@icloud.com
