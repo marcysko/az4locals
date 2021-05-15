@@ -5,7 +5,7 @@
 
 ## Description
 
-Built a CMS-style blog site similar to a Wordpress site, where visitors can publish blog posts related to Arizona and comment on other visitors’ posts.
+Built a CMS-style blog site similar to a Wordpress site, where visitors can sign up and/or login to publish blog posts related to Arizona and comment on other visitors’ posts.
 
 
  
@@ -24,8 +24,13 @@ https://agile-cliffs-08028.herokuapp.com/
   * [License](#License)
   
   * [Technology](#Technology)
+
+  *  [Contributors](#Contributing) 
   
   * [Questions](#Questions)
+ 
+
+
 
 
 ### License
