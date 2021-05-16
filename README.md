@@ -51,6 +51,7 @@ ISC
 - dotenv
 - bcrypt
 - Git
+- Weather Widget
 
 
 ## Contributors
